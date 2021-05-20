@@ -1,0 +1,1 @@
+`yarn install && node index.js` and go to `http://localhost:3000/simple-test.html`
