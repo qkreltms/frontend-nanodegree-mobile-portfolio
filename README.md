@@ -18,6 +18,9 @@ FOIT vs FOUT
     https://d2.naver.com/helloworld/4969726
     https://simonhearne.com/2021/layout-shifts-webfonts/
     https://showerbugs.github.io/2018-02-02/%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%98%EA%B8%B0
-7. 인라인 js timeline이 어떻게 변화하는지 external과의 차이
-8. 인라인 style ""
+
+7. 인라인 vs external 장단점 간단히 => 인라인보다는 external 분리후 lazyloding, defer, async 활용이 더 좋다는 식으로
+참고: https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp
+css 인라인 => DCM이 더 빨라짐, 네트워크 통신 줄어듦 => 시ㅈㄴ 절약
+마찬가지로 JS도 같을까? => 그렇지 않다 왜냐하면 cssom이 빌드된 후 JS가 실행되기 때문에 JS가 인라인이건 익스터널이건 상관없다.  external로 쓰고 async나 defer달아주는게 좋음
 9. 마무리
